@@ -4,7 +4,16 @@
   "private": false,
   "description": "对 bootstrap-select 插件的简单包装",
   "main": "lib/vue-bootstrap-select.umd.min.js",
-  "keywords": ["vue", "bootstrap-select", "vue bootstrap select"],
+  "keywords": [
+    "vue",
+    "bootstrap-select",
+    "vue bootstrap select"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whosphp/vue-bootstrap-select-wrapper"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
