@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap-select-wrapper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "对 bootstrap-select 插件的简单包装",
   "main": "lib/vue-bootstrap-select.umd.min.js",
