@@ -22,17 +22,17 @@
             }
         },
         mounted() {
-            window.$(this.$el).selectpicker('val', this.val)
+            $(this.$el).selectpicker('val', this.val)
         },
         watch: {
             value(value) {
-                this.$nextTick(() => window.$(this.$el).selectpicker('val', value))
+                this.$nextTick(() => $(this.$el).selectpicker('val', value))
             },
             val(val) {
                 this.$emit('input', val)
             },
             options() {
-                this.$nextTick(() => window.$(this.$el).selectpicker('refresh'))
+                this.$nextTick(() => $(this.$el).selectpicker('refresh'))
             },
         }
     }
