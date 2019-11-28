@@ -35,18 +35,33 @@ Vue.use(BootstrapSelect)
 <template>
   Single Select:
   <bootstrap-select :options="options" v-model="value"></bootstrap-select>
+  
   Multi Select:
   <bootstrap-select :options="options" v-model="value1" multiple></bootstrap-select>
+  
+  绑定二维数组时指定 label 和 key
+  <bootstrap-select track-by="id" label="name" :options="options3" v-model="value3"></bootstrap-select>
 </template>
 <script>
   export default {
     data () {
       return {
-        options: [
+          options: [
             1, 2, 3
           ],
+          options3: [
+            {
+                id : 1,
+                name : 'test1',
+            },
+            {
+                id : 2,
+                name : 'test2',
+            }
+          ],
           value: null,
-          value1: []
+          value1: [],
+          value3: null,
         }
     }
   }

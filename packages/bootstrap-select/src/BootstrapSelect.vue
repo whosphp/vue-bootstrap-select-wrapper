@@ -12,7 +12,7 @@
         name: 'BootstrapSelect',
         props: {
             'options': Array,
-            'value': [Array, String],
+            'value': [Array, String, Number],
             'trackBy': String,
             'label': String,
         },
